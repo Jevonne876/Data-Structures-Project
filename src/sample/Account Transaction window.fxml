@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleCloseButtonAction" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="appbar" alignment="CENTER" layoutX="-6.0" prefHeight="43.0" prefWidth="607.0" text="Western Union Bitcoin Transfers" textFill="#17a589">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="appbar" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="-2.0" layoutY="43.0" prefHeight="43.0" prefWidth="607.0" text="Select Task from the MenuButton below: " textFill="#17a589">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="menubutton1" contentDisplay="CENTER" layoutX="198.0" layoutY="118.0" mnemonicParsing="false" text="Account Transactions" textFill="#990012">
+        <items>
+          <MenuItem fx:id="sub1" mnemonicParsing="false" onAction="#ViewAccountinfowindow" text="View Personal Details" />
+          <MenuItem fx:id="sub1" mnemonicParsing="false" onAction="#View_Transaction_receive_window" text=" View Recieved Transactions" />
+            <MenuItem fx:id="sub1" mnemonicParsing="false" onAction="#sent_window" text=" View Sent Transactions" />
+            <MenuItem fx:id="sub1" mnemonicParsing="false" onAction="#Remittancetool" text="Bitcoin Transfer" />
+        </items>
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </MenuButton>
+      <Label fx:id="appbar" layoutX="-3.0" layoutY="249.0" prefHeight="51.0" prefWidth="607.0" textFill="#17a589">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

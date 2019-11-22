@@ -1,0 +1,35 @@
+#anchor,#logmen{
+        -fx-background-color:#00FFFF;
+}
+#appbar,#status{
+    -fx-background-color:white;
+}
+
+#createnewaccount,#Login,#password,#username,#Receiver{
+    -fx-background-color:#00FFFF;
+   -fx-border-color:#B71C1C;
+   -fx-border-width:3px;
+   -fx-border-radius:25px;
+
+}
+#Login:pressed{
+    -fx-background-color:#18FFFF;
+      -fx-border-radius:20px;
+}
+#createnewaccount:pressed{
+      -fx-background-color:#18FFFF;
+          -fx-border-radius:20px;
+}
+#menubutton1{
+     -fx-background-color:#00FFFF;
+       -fx-border-color:#00FFFF;
+       -fx-border-width:2px;
+       -fx-border-radius:25px;
+}
+#sub1{
+    /*fx-border-color:;*/
+    -fx-font-size:15px;
+    -fx-background-color:#00FFFF;
+    -fx-font-family: "Times New Roman", Times, serif;
+    -fx-font-style:normal;
+}

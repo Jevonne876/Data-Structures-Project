@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="579.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="appbar" alignment="TOP_CENTER" layoutX="-4.0" layoutY="-2.0" prefHeight="59.0" prefWidth="586.0" text="Remittance Tool" textFill="#17a589" underline="true">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutY="60.0" prefHeight="43.0" prefWidth="600.0" text="Please Fill out the Form with Correct Information for money transfer">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="164.0" prefHeight="23.0" prefWidth="116.0" text="Receiver Username">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="214.0" prefHeight="19.0" prefWidth="133.0" text="Transaction Ammount">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Receiver" layoutX="275.0" layoutY="163.0" promptText="Receiver Username" />
+      <TextField fx:id="Transaction" layoutX="275.0" layoutY="211.0" promptText="Transaction Amount" />
+      <Button fx:id="Login" layoutX="290.0" layoutY="259.0" mnemonicParsing="false" onAction="#MoneyTransaction" prefHeight="37.0" prefWidth="87.0" text="Send" />
+      <TextField fx:id="username" layoutX="275.0" layoutY="124.0" promptText="Sender username" />
+      <Label layoutX="151.0" layoutY="125.0" prefHeight="23.0" prefWidth="116.0" text="Sender Username" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="appbar" layoutY="307.0" prefHeight="43.0" prefWidth="579.0" textFill="#17a589">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
